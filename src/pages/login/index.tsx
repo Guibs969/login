@@ -1,12 +1,15 @@
 import React from 'react';
-import { View, Text, TextInput, ImageBackground } from 'react-native';
+import { View, Text, TextInput, ImageBackground, TouchableOpacity } from 'react-native';
 import { SafeAreaProvider} from 'react-native-safe-area-context';
 import { styles } from './styles';
 import Button from '@/src/components/button';
 
 
  function Login() {
+  function entrar (){
+    console.log('O botão entrar foi acionado');
 
+  }
 
 
   return (
@@ -18,9 +21,13 @@ import Button from '@/src/components/button';
       <TextInput style={styles.input} placeholder="Email" />
       <TextInput style={styles.input} placeholder="Senha" />
       </View>
+      <TouchableOpacity>
       <Text> Esqueceu sua senha? </Text>
-      <Button title="Entrar" onPress = {() => {}} />
+      </TouchableOpacity>
+      <Button title="Entrar" onPress = {entrar} />
+      <TouchableOpacity>
         <Text> Criar uma nova conta ? </Text>
+        </TouchableOpacity>
         
     </SafeAreaProvider>
   );

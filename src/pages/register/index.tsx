@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TextInput, ImageBackground } from 'react-native';
+import { View, Text, TextInput, ImageBackground, TouchableOpacity } from 'react-native';
 import { SafeAreaProvider} from 'react-native-safe-area-context';
 import { styles } from './styles';
 import Button from '@/src/components/button';
@@ -21,7 +21,9 @@ import Button from '@/src/components/button';
       </View>
       
       <Button title="Registrar-Se" onPress = {() => {}} />
+        <TouchableOpacity>
         <Text> Já possuí conta ? </Text>
+        </TouchableOpacity>
         
     </SafeAreaProvider>
   );
