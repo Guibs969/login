@@ -19,7 +19,11 @@ import Button from '@/src/components/button';
       <Text style={styles.text}> Login  </Text>
       <View style={styles.inputContainer}>
       <TextInput style={styles.input} placeholder="Email" />
-      <TextInput style={styles.input} placeholder="Senha" />
+      <TextInput
+       style={styles.input}
+       placeholder="Senha"
+       onChangeText={e=> console.log(e)}
+       />
       </View>
       <TouchableOpacity>
       <Text> Esqueceu sua senha? </Text>
